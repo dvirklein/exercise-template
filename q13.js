@@ -8,7 +8,6 @@ function run() {
   out += "elemnt " + sum + ": " + input + "\n";
   sum++;
   /**/
-
   //toString(); // returns [object/num/string/ Object]
   /**/
   output.innerText = out;

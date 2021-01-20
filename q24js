@@ -1,0 +1,39 @@
+function run() {
+  const input = document.getElementById("input").value;
+  let a = input;
+  const output = document.getElementById("output");
+  let out = is_Duplicate(a);
+  /**/
+  //toString(); // returns [object/num/string/ Object]
+
+  output.innerText = out;
+}
+
+function is_Diffrent(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== "number" || arr[i] == 0 || arr[i].isNaN) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+
+  return arr;
+}
+let arrk = [
+  3,
+  4,
+  6,
+  5,
+  4,
+  5,
+  6,
+  "-",
+  "tertret",
+  NaN,
+  0,
+  0,
+  true,
+  undefined,
+  NaN,
+];
+console.log(is_Diffrent(arrk));

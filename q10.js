@@ -2,7 +2,7 @@ function run() {
   const input = document.getElementById("input").value;
   let a = JSON.parse(input);
   const output = document.getElementById("output");
-  let out = newOrder(a);
+  let out = declareOrder(a);
   /**/
   //toString(); // returns [object/num/string/ Object]
   /**/

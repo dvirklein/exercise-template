@@ -15,7 +15,7 @@ function binary_search(arr, num) {
   for (let i = 0; i < arr.length; i++) {
     count++;
     if (num === arr[i]) {
-      console.log("element " + num + " in the " + count + " spot");
+      console.log("element " + num + " in the " + count + " spot" + "\n");
     }
   }
 }
